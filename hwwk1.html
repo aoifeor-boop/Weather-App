@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width", initial-scale=1.0">
+  <title>Weather Tracker</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="src/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col"><h1>Weather Tracker</h1></div>
+    <div class="col">
+    <img id="weather-pic" src="img/weather.svg" alt="Weather Girl" width="300">
+  </div>
+  </div>
+    <form id=searchButton>
+      <input class="search-box" type="text" id=searchBar placeholder="City" />
+      <button>Search</button>
+    </form>
+  <hr />
+  <button id=locationButton >Current Location</button>
+  <hr />
+  <h3 id = city-name>
+    Today in Dublin:
+   </h3>
+    <h5>
+      <span id=todayTemp >12</span><span id=celciusSymbol >˚C</span>
+    </h5>
+<h6 id=weatherDescription >Cloudy ☁️</h6>
+<hr>
+<div class="row">
+  <div class="col-2"><div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Tomorrow</h5>
+      <h6 class="card-subtitle mb-2 text-muted">7˚C || F </h6>
+      <p class="card-text">Sunny</p>
+    </div>
+  </div>
+</div>
+  <div class="col-2"><div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Monday</h5>
+      <h6 class="card-subtitle mb-2 text-muted">8˚C || F</h6>
+      <p class="card-text">Raining</p>
+    </div>
+  </div>
+</div>
+  <div class="col-2"><div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Tuesday</h5>
+      <h6 class="card-subtitle mb-2 text-muted">2˚C || F</h6>
+      <p class="card-text">Foggy</p>
+    </div>
+  </div>
+</div>
+  <div class="col-2"><div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Wednesday</h5>
+      <h6 class="card-subtitle mb-2 text-muted">6˚C || F</h6>
+      <p class="card-text">Cloudy</p>
+    </div>
+  </div>
+</div>
+  <div class="col-2"><div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Thursday</h5>
+      <h6 class="card-subtitle mb-2 text-muted">5˚C || F</h6>
+      <p class="card-text">Sunny</p>
+
+    </div>
+  </div>
+</div>
+  <div class="col-2"><div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Friday</h5>
+      <h6 class="card-subtitle mb-2 text-muted">4˚C || F</h6>
+      <p class="card-text">Cloudy</p>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+  <script src="src/hwwk1.js"></script>
+</body>
+</html>
