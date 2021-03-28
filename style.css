@@ -6,6 +6,9 @@ h1{
   padding: 20px 50px;
   text-align:center;
 }
+.container {
+    margin-top: 50px;
+}
 img{
   margin-left: 40px;
 }
